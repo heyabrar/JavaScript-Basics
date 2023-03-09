@@ -1,0 +1,9 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+#CounterComponent{
+    width: 20%;
+    margin: auto;
+    text-align: center;
+}
