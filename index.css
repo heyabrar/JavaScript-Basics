@@ -1,16 +1,44 @@
-*{
+* {
     font-family: 'Poppins', sans-serif;
 }
 
-#CounterComponent{
+/* Counter CSS */
+
+#CounterComponent {
     width: 20%;
     margin: auto;
     text-align: center;
 }
 
-#CounterDiv{
+#CounterDiv {
     display: flex;
     gap: 10px;
     justify-content: center;
     align-items: center;
+}
+
+
+/* Product Listing CSS */
+#Products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: auto;
+}
+
+.box {
+    transition: 1.5s all ease-in-out;
+    overflow: hidden;
+    text-align: center;
+}
+
+.box>img {
+    width: 400px;
+    border-radius: 5px;
+    transition: 0.8s all ease-in-out;
+}
+
+.box>img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }

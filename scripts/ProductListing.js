@@ -1,24 +1,24 @@
 const API = `https://api.escuelajs.co/api/v1/categories`;
 
-const getData = ( ) =>{
-   return fetch(API).then((res)=>{
-        return res.json( );
+const getData = () => {
+    return fetch(API).then((res) => {
+        return res.json();
     })
 }
 
-const handleGetData = ( ) =>{
-    getData().then((res)=>{
-        console.log(res)
+const handleGetData = () => {
+    getData().then((res) => {
         DisplayData(res)
     })
 }
-handleGetData( );
+handleGetData();
 
-const DisplayData = (data) =>{
+const DisplayData = (data) => {
 
-    data.forEach((item)=>{
+    data.forEach((item) => {
 
         let box = document.createElement('div');
+        box.setAttribute('class', 'box')
 
         let image = document.createElement('img');
         image.src = item.image
@@ -26,8 +26,7 @@ const DisplayData = (data) =>{
         let title = document.createElement('p');
         title.textContent = item.name
 
-        box.append(image,title)
+        box.append(image, title)
         document.getElementById('Products').append(box);
     })
-
 }
