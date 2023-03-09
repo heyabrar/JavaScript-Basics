@@ -13,6 +13,7 @@ const handleGetData = () => {
 }
 handleGetData();
 
+
 const DisplayData = (data) => {
 
     data.forEach((item) => {
